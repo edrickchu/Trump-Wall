@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Trump Wall</title>
+
+<style>
+
+.cells {
+	width: 90px;
+	height: 45px;
+}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
+
+</head>
+<body>
+
+
+
+</body>
+
+<script>
+(function generate_table() {
+  var body = document.getElementsByTagName("body")[0];
+  var tbl = document.createElement("table");
+  tbl.id = "table"
+  var tblBody = document.createElement("tbody");
+ 
+  for (var i = 0; i < 10; i++) {
+    var row = document.createElement("tr");
+ 
+    for (var j = 0; j < 10; j++) {
+      var cell = document.createElement("td");
+      cell.className = 'cells'
+      cell.id = i + "_" + j
+      row.appendChild(cell);
+
+    }
+    tblBody.appendChild(row);
+  }
+
+  tbl.appendChild(tblBody);
+  body.appendChild(tbl);
+  tbl.setAttribute("border", "1");
+})();
+
+$('.cells').click(function () {
+	$(this).css('background', 'black');
+	$(this).attr('id', 'filled');
+	console.log(this);
+});
+
+for (i=0;i<$('.cells').length;i++) {
+	if ($('.cells')) {
+
+	}
+}
+
+</script>
+</html>
