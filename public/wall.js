@@ -1,12 +1,12 @@
 (function generate_table() {
 
-  // variable setting for table elements
+  // create table and append to body
   var body = document.getElementsByTagName("body")[0];
   var tbl = document.createElement("table");
   tbl.id = "table"
   var tblBody = document.createElement("tbody");
  
-  // build the table, specify row and column params
+  // build the first row of builable bricks
   var row = document.createElement("tr");
   row.id = 0;
  
@@ -21,8 +21,7 @@
   tbl.appendChild(tblBody);
   body.appendChild(tbl);
 
-
-  // add a row when wall gets to high
+  // add row (Function)
   function addRow() {
   	rowId = Number(tblBody.childNodes[0].id)+1
   	var row = document.createElement("tr");
@@ -37,19 +36,19 @@
   	tblBody.insertBefore(row, tblBody.childNodes[0]);
   }
 
-  // add row button (will become based off of height)
+  // add row button (Event)
   $('#add-row').click(function() {
   	addRow();
   })
 
-  // changes a brick to built and the one above to buildable
+  // build a brick and make the brick above buildable (Event)
   $('.brick-buildable').on('click', function () {
   	$(this)[0].className = 'brick-built';
 	  getBrickAbove.apply(this);
   });
   
 
-  // makes the brick above buildable
+  // make the brick above buildable (Function)
   function getBrickAbove() {
     column = $(this)[0].id.split('_')[1];
     row = Number($(this)[0].id.split('_')[0]) + 1;
@@ -62,6 +61,7 @@
     });
   }
 
+  // add 10 rows
   for (var t = 0; t < 12; t++) {
     addRow();
   };

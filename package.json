@@ -1,0 +1,22 @@
+{
+  "name": "trump_wall",
+  "version": "1.0.0",
+  "description": "trump wall",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OLI9292/trump_wall.git"
+  },
+  "author": "Oliver, Adam, Edrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OLI9292/trump_wall/issues"
+  },
+  "homepage": "https://github.com/OLI9292/trump_wall#readme",
+  "dependencies": {
+    "mongodb": "^2.1.16"
+  }
+}
