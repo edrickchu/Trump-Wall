@@ -3,28 +3,23 @@
 <head>
 
 <title>Trump Wall</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="public/main.css">
 
 </head>
 <body>
 
-<button id='add-row'>Add Row</button>
+<div id='header'>
+  <h1>The Great Wall of Trump</h1>
+</div>
+
+<div id='button'>
+  <button id='add-row'>Add Row</button>
+</div>
 
 <div id='sidebar'>
   <form action="profile" method='post'>
-  <div>
-    <label for="name">Name: </label>
-    <input type="text" id="name" name="name"></input>
-  </div>
-  <div>
-    <label for="name">Home: </label>
-    <input type="text" id="home" name="home"></input>
-  </div>
-  <div>
-    <label for="thought">Thought: </label>
-    <input type="text" id="thought" name="thought"></input>
-  </div>
-  <div>
+ 
+  <div id='profile-photo'>
     <label for="photo">Photo: </label>
     <input type="file" id="photo" name="photo">
   <br>
@@ -32,6 +27,18 @@
   <input type="submit">
   </form>
 </div>
+ <div>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name"></input>
+  </div>
+  <div>
+    <label for="hometown">Hometown: </label>
+    <input type="text" id="hometown" name="hometown"></input>
+  </div>
+  <div>
+    <label for="story">Story: </label>
+    <input type="text" id="story" name="story"></input>
+  </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
 <script src="wall.js"></script>
