@@ -2,34 +2,54 @@
   width: 75%;
 }
 
+html,body,header {padding:0; margin:0;}
+
 div#header {
-  top: 0px;
-  left: 0px;
   margin: 0px;
-  height: 80px;
+  padding: 0px;
+  left: 0px;
+  top: 0px;
+  border: 0px;
+  height: 100px;
   width: 100%;
   background-color: #f2f2f2;
-  z-index: 10;
 }
 
 div#sidebar {
-  right: 0px;
+  margin: 0px;
   width: 256px;
   height: 800px;
   float: right;
-  border-left: 2px solid black;
-  background-color: green;
   box-shadow: -3px 3px 3px #888888;
-  z-index: 12;
+}
+
+input.data {
+  width: 230px;
+  border: 0px;
+}
+
+input#story {
+  width: 230px;
+  height: 10em;
 }
 
 div#profile-photo {
-  margin-top: 12px;
+  margin-top: 13px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 13px;
   width: 231px;
-  height: 200px;
+  height: 231px;
   background-color: gray;
+}
+
+div.data {
+  margin-left: 13px;
+  height: 40px;
+}
+
+div#story {
+
 }
 
 .brick {
