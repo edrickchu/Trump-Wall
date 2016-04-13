@@ -50,6 +50,36 @@ div.data {
 
 div#story {
 
+=======
+div#header {
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  height: 80px;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 10;
+}
+
+div#sidebar {
+  right: 0px;
+  width: 256px;
+  height: 800px;
+  float: right;
+  border-left: 2px solid black;
+  background-color: green;
+  box-shadow: -3px 3px 3px #888888;
+  z-index: 12;
+}
+
+div#profile-photo {
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 231px;
+  height: 200px;
+  background-color: gray;
+>>>>>>> 45b68a9874e91d0d25789f60de295ee5fed2b70f
 }
 
 .brick {
